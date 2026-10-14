@@ -30,6 +30,9 @@ public class Student {
     @Column(nullable = false)
     private Double marks;
 
+    @Column(name = "teacher_id")
+    private Long teacherId;
+
     public Student() {
     }
 
@@ -79,5 +82,13 @@ public class Student {
 
     public void setMarks(Double marks) {
         this.marks = marks;
+    }
+
+    public Long getTeacherId() {
+        return teacherId;
+    }
+
+    public void setTeacherId(Long teacherId) {
+        this.teacherId = teacherId;
     }
 }
